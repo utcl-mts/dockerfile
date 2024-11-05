@@ -6,16 +6,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Update package lists and install NGINX and Git
 RUN apt-get update && \
-    apt-get install -y nginx git && apt-get install -y mysql-server &&\
+    apt-get install -y nginx git && apt-get install -y mariadb-server &&\
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
-
-# Set environment variables (replace these with your own values)
-ENV MYSQL_ROOT_PASSWORD=rootpassword
-ENV MYSQL_DATABASE=mydatabase
-ENV MYSQL_USER=myuser
-ENV MYSQL_PASSWORD=mypassword
 
 # Expose ports
 EXPOSE 80
