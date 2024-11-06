@@ -1,6 +1,3 @@
-# Name the container
---name="utcl-mts" 
-
 # Use the official Debian image as the base
 FROM debian:latest
 
