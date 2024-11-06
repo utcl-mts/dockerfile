@@ -1,0 +1,4 @@
+version: '1'
+services:
+  my-service:
+    container_name: utcl-mts
